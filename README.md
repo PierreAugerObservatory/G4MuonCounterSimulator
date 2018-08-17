@@ -20,9 +20,9 @@ Software is no longer maintained.
 
 ### **Prerequisites**
 Install the project mandatory dependencies:  
-* ROOT [https://root.cern.ch/]
-* GEANT4 [https://www.r-project.org/]
 * AugerOffline (and relative dependencies)
+* ROOT [https://root.cern.ch/]
+* GEANT4 [https://geant4.web.cern.ch/]
 
 Make sure you have set the following environment variables to the external library installation dirs 
 * ROOTSYS: set to ROOT installation path
@@ -41,8 +41,4 @@ To build the project:
 Binaries will be placed in the bin/ directory and libraries in the lib/ directory.
 
 ### **Usage**
-* ```MDImputation [--input=[path-to-inputfile]] [--config=[path-to-configfile]]```    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```--input=[path-to-inputfile] -  Input data file (.dat) with missing data to be imputed```   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```--input=[path-to-inputfile] -  Input data file (.dat) with missing data to be imputed```   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```--method=[imputation-method] -  Imputation method to be used (1=MEAN, 2=LISTWISE DELETION, 3=MultipleImputation, 4=MN clustering, 5=MSN clustering```   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```--config=[path-to-configfile] - Configuration file name with options```    
+* ```userAugerOffline -b [path-to-xml-configfile]]```        
