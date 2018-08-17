@@ -14,7 +14,7 @@ LIBDIR  = $(TOPDIR)/lib
 SRCDIR  = $(TOPDIR)/src
 INCDIR  = $(TOPDIR)/include
 OBJDIR  = $(TOPDIR)/obj
-XMLDIR  = $(TOPDIR)/xml
+XMLDIR  = $(TOPDIR)/config
 
 USER_SRCS = $(wildcard *.cc $(SRCDIR)/*.cc)
 USER_HEADERS = $(wildcard $(INCDIR)/*.h $(INCDIR)/*.hh)
