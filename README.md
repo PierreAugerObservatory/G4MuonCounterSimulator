@@ -34,7 +34,7 @@ NB: Modify Makefile CPPFLAGS and LDFLAGS in case the dependency tools cannot be 
 To build the project:
 
 * Clone this repository into your local $SOURCE_DIR    
-  ```git clone https://github.com/simoneriggi/mida-imputation.git $SOURCE_DIR```    
+  ```git clone https://github.com/PierreAugerObservatory/G4MuonCounterSimulator.git $SOURCE_DIR```    
 * In the project directory type:    
   ```make```  
 
