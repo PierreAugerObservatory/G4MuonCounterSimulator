@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="iso-8859-1"?> 
+
+<!DOCTYPE stationList [
+  <!ENTITY UTMdata
+    "<ellipsoid> WGS84 </ellipsoid> <zone> 19 </zone> <band> H </band>"
+  >
+]>
+
+
+<stationList
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation='@SCHEMALOCATION@/SStationList.xsd'> 
+
+
+   <station id="1">
+   	<northing unit="meter"> 6111331.62 </northing>
+   	<easting unit="meter"> 449879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter1_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.00 112.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="2">
+   	<northing unit="meter"> 6111331.62 </northing>
+   	<easting unit="meter"> 450629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter2_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.50 112.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="3">
+   	<northing unit="meter"> 6111331.62 </northing>
+   	<easting unit="meter"> 451379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter3_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 112.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="4">
+   	<northing unit="meter"> 6111331.62 </northing>
+   	<easting unit="meter"> 452129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter4_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 112.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="5">
+   	<northing unit="meter"> 6111331.62 </northing>
+   	<easting unit="meter"> 452879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter5_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 112.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="6">
+   	<northing unit="meter"> 6111981.14 </northing>
+   	<easting unit="meter"> 449504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter6_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.00 112.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="7">
+   	<northing unit="meter"> 6111981.14 </northing>
+   	<easting unit="meter"> 450254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter7_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.50 112.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="8">
+   	<northing unit="meter"> 6111981.14 </northing>
+   	<easting unit="meter"> 451004.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter8_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 112.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="9">
+   	<northing unit="meter"> 6111981.14 </northing>
+   	<easting unit="meter"> 451754.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter9_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 112.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="10">
+   	<northing unit="meter"> 6111981.14 </northing>
+   	<easting unit="meter"> 452504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter10_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 112.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="11">
+   	<northing unit="meter"> 6111981.14 </northing>
+   	<easting unit="meter"> 453254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter11_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 112.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="12">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 449129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter12_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.00 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="13">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 449879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter13_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.50 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="14">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 450629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter14_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="15">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 451379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter15_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="16">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 452129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter16_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="17">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 452879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter17_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="18">
+   	<northing unit="meter"> 6112630.66 </northing>
+   	<easting unit="meter"> 453629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter18_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 113.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="19">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 448754.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter19_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.00 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="20">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 449504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter20_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.50 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="21">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 450254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter21_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="22">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 451004.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter22_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="23">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 451754.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter23_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="24">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 452504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter24_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="25">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 453254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter25_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="26">
+   	<northing unit="meter"> 6113280.18 </northing>
+   	<easting unit="meter"> 454004.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter26_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.50 113.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="27">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 448379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter27_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.00 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="28">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 449129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter28_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.50 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="29">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 449879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter29_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="30">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 450629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter30_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="31">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 451379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter31_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="32">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 452129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter32_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="33">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 452879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter33_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="34">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 453629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter34_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.50 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="35">
+   	<northing unit="meter"> 6113929.70 </northing>
+   	<easting unit="meter"> 454379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter35_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 97.00 114.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="36">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 448754.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter36_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.50 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="37">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 449504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter37_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="38">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 450254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter38_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="39">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 451004.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter39_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="40">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 451754.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter40_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="41">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 452504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter41_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="42">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 453254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter42_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.50 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="43">
+   	<northing unit="meter"> 6114579.22 </northing>
+   	<easting unit="meter"> 454004.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter43_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 97.00 114.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="44">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 449129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter44_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.00 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="45">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 449879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter45_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="46">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 450629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter46_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="47">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 451379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter47_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="48">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 452129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter48_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="49">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 452879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter49_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.50 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="50">
+   	<northing unit="meter"> 6115228.73 </northing>
+   	<easting unit="meter"> 453629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter50_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 97.00 115.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="51">
+   	<northing unit="meter"> 6115878.25 </northing>
+   	<easting unit="meter"> 449504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter51_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.50 115.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="52">
+   	<northing unit="meter"> 6115878.25 </northing>
+   	<easting unit="meter"> 450254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter52_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 115.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="53">
+   	<northing unit="meter"> 6115878.25 </northing>
+   	<easting unit="meter"> 451004.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter53_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 115.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="54">
+   	<northing unit="meter"> 6115878.25 </northing>
+   	<easting unit="meter"> 451754.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter54_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 115.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="55">
+   	<northing unit="meter"> 6115878.25 </northing>
+   	<easting unit="meter"> 452504.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter55_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.50 115.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="56">
+   	<northing unit="meter"> 6115878.25 </northing>
+   	<easting unit="meter"> 453254.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter56_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 97.00 115.50 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="57">
+   	<northing unit="meter"> 6116527.77 </northing>
+   	<easting unit="meter"> 449879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter57_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.00 116.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="58">
+   	<northing unit="meter"> 6116527.77 </northing>
+   	<easting unit="meter"> 450629.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter58_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 95.50 116.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="59">
+   	<northing unit="meter"> 6116527.77 </northing>
+   	<easting unit="meter"> 451379.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter59_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.00 116.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="60">
+   	<northing unit="meter"> 6116527.77 </northing>
+   	<easting unit="meter"> 452129.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter60_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 96.50 116.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="61">
+   	<northing unit="meter"> 6116527.77 </northing>
+   	<easting unit="meter"> 452879.86 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter61_infill750 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 97.00 116.00 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="62">
+   	<northing unit="meter"> 6112842.16 </northing>
+   	<easting unit="meter"> 450254.67 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter62_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.83 113.16 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="63">
+   	<northing unit="meter"> 6113058.66 </northing>
+   	<easting unit="meter"> 450629.66 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter63_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.17 113.33 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="64">
+   	<northing unit="meter"> 6112842.16 </northing>
+   	<easting unit="meter"> 449504.69 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter64_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.33 113.16 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="65">
+   	<northing unit="meter"> 6113058.66 </northing>
+   	<easting unit="meter"> 449879.68 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter65_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.67 113.33 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="66">
+   	<northing unit="meter"> 6113491.66 </northing>
+   	<easting unit="meter"> 450629.66 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter66_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.33 113.66 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="67">
+   	<northing unit="meter"> 6113708.16 </northing>
+   	<easting unit="meter"> 451004.65 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter67_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.67 113.83 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="68">
+   	<northing unit="meter"> 6113058.66 </northing>
+   	<easting unit="meter"> 449129.70 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter68_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.17 113.33 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="69">
+   	<northing unit="meter"> 6113491.66 </northing>
+   	<easting unit="meter"> 449879.68 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter69_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.83 113.66 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="70">
+   	<northing unit="meter"> 6113708.16 </northing>
+   	<easting unit="meter"> 450254.67 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter70_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.17 113.83 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="71">
+   	<northing unit="meter"> 6114141.16 </northing>
+   	<easting unit="meter"> 451004.65 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter71_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.83 114.16 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="72">
+   	<northing unit="meter"> 6113491.66 </northing>
+   	<easting unit="meter"> 449129.70 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter72_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.33 113.66 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="73">
+   	<northing unit="meter"> 6113708.16 </northing>
+   	<easting unit="meter"> 449504.69 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter73_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.67 113.83 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="74">
+   	<northing unit="meter"> 6114141.16 </northing>
+   	<easting unit="meter"> 450254.67 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter74_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.33 114.16 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="75">
+   	<northing unit="meter"> 6114357.66 </northing>
+   	<easting unit="meter"> 450629.66 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter75_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.67 114.33 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="76">
+   	<northing unit="meter"> 6113708.16 </northing>
+   	<easting unit="meter"> 448754.71 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter76_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.17 113.83 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="77">
+   	<northing unit="meter"> 6114141.16 </northing>
+   	<easting unit="meter"> 449504.69 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter77_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.83 114.16 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="78">
+   	<northing unit="meter"> 6114357.66 </northing>
+   	<easting unit="meter"> 449879.68 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter78_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.17 114.33 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="79">
+   	<northing unit="meter"> 6114790.66 </northing>
+   	<easting unit="meter"> 450629.66 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter79_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.83 114.66 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="80">
+   	<northing unit="meter"> 6114141.16 </northing>
+   	<easting unit="meter"> 448754.71 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter80_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.33 114.16 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="81">
+   	<northing unit="meter"> 6114357.66 </northing>
+   	<easting unit="meter"> 449129.70 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter81_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.67 114.33 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="82">
+   	<northing unit="meter"> 6114790.66 </northing>
+   	<easting unit="meter"> 449879.68 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter82_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.33 114.66 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="83">
+   	<northing unit="meter"> 6115007.16 </northing>
+   	<easting unit="meter"> 450254.67 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter83_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.67 114.83 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="84">
+   	<northing unit="meter"> 6114790.66 </northing>
+   	<easting unit="meter"> 449129.70 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter84_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 93.83 114.66 </axes>
+   	&UTMdata;
+   </station>
+
+
+   <station id="85">
+   	<northing unit="meter"> 6115007.16 </northing>
+   	<easting unit="meter"> 449504.69 </easting>
+   	<altitude unit="meter"> 1400 </altitude>
+   	<name> MCounter85_infill433 </name>
+   	<commission> 2000-01-01T00:00:00Z </commission>
+   	<decommission> 2030-01-01T00:00:00Z </decommission>
+   	<inGrid> 1 </inGrid>
+   	<groupId> 0 </groupId>
+   	<axes> 94.17 114.83 </axes>
+   	&UTMdata;
+   </station>
+
+
+</stationList>

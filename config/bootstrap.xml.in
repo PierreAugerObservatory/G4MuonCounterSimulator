@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE bootstrap [
+  <!-- alias for example SD config files -->
+  <!ENTITY exampleSDConfig SYSTEM '@CONFIGDIR@/exampleSDConfig.xml'>
+]>
+
+<bootstrap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation='@SCHEMALOCATION@/bootstrap.xsd'
+           xmlns:xlink="http://www.auger.org/schema/types">
+
+  <!-- get example configuration for SD -->
+  &exampleSDConfig;
+
+  
+  <centralConfig>
+
+    <configLink
+      id         = "ModuleSequence"
+      type       = "XML"
+      xlink:href = "./xml/ModuleSequence.xml"/>
+
+     <configLink
+			id         = "EventFileReader"
+      type       = "XML"
+      xlink:href = "./xml/EventFileReader.xml"/>
+
+    <configLink
+      id         = "EventGenerator"
+      type       = "XML"
+      xlink:href = "./xml/EventGenerator.xml"/>
+
+    <configLink
+      id         = "UserModule"
+      type       = "XML"
+      xlink:href = "./xml/UserModule.xml"/>
+
+		<configLink
+      id         = "ShowerRegenerator"
+      type       = "XML"
+      xlink:href = "./xml/ShowerRegenerator.xml"/>
+
+		<configLink
+      id         = "G4MuonCounterSimulatorUSC"
+      type       = "XML"
+      xlink:href = "./xml/G4MuonCounterSimulator.xml"/>
+
+		<configLink
+      id         = "G4MuonCounterReconstructorUSC"
+      type       = "XML"
+      xlink:href = "./xml/G4MuonCounterReconstructor.xml"/>
+
+		<configLink 
+     id         = "EventFileRecorder"
+     type       = "XML" 
+     xlink:href = "./xml/EventFileRecorder.xml" />
+
+		<configLink
+      id         = "G4MuonCounterParticleInjector"
+      type       = "XML"
+      xlink:href = "./xml/G4MuonCounterParticleInjector.xml"/>		
+
+
+		<configLink
+        id         = "SManagerRegister"
+        type       = "XML"
+        xlink:href = "./xml/SManagerRegisterConfig.xml"/>
+
+<!--
+		<configLink 
+     id         = "SStationListXMLManager"
+     type       = "XML" 
+     xlink:href = "./xml/SStationList.xml" />
+-->
+
+
+		<configLink 
+     id         = "SStationListXMLManager"
+     type       = "XML" 
+     xlink:href = "./xml/InfillSDStationList.xml" />
+
+
+  </centralConfig>
+
+</bootstrap>

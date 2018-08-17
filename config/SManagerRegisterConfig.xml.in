@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Define which surface detector description managers
+     are used and in what order.  Order of queries follows order
+     of manager name appearence in this file. -->
+
+<SDetectorManagerList
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='@SCHEMALOCATION@/SManagerRegisterConfig.xsd'>
+
+  <!-- The override manager provides a way of replacing default parameters
+       with override data.  If one wants to use this manager, then it
+       should be be first in the manager list. Data found in override 
+       manager pre-empts data in subsequent managers. -->
+
+  <!--manager> SOverrideXMLManager </manager-->
+
+  <!-- The SStationListXMLManager reads station positions from an XML file -->
+  <manager> SStationListXMLManager </manager>
+
+  <!-- The SStationListSQLManager reads station positions from an SQL
+       database which is synchronized to the PMS -->
+  <!--manager> SStationListSQLManager </manager-->
+
+  <!-- The SModelsXMLManager reads static quantities describing the
+       stations, like tank geometry, materials, etc -->
+  <manager> SModelsXMLManager </manager>
+
+  <!-- The EventStationPositionsManager deals with cases in which
+       a station appears in the data stream *before* being entered into
+       the PMS or the XML station list.  This is just meant as a convenience,
+       and should not be needed once deployment is finished -->
+  <manager> EventStationPositionsManager </manager>
+  
+  <!-- The SdSimCalibrationManager is used to read the calibration
+       constants and histograms for simulated stations -->
+  <manager> SdSimCalibrationManager </manager> 
+
+</SDetectorManagerList>

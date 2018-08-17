@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+
+<G4MuonCounterReconstructorUSC>
+
+	<readSimInfoFromFile> 1 </readSimInfoFromFile>
+				<!-- Name of ROOT input filename -->
+  <!-- <InputFileName> Output.root </InputFileName> 	 -->
+	<!-- <InputFileName> SampleBATATAEventSim.root </InputFileName> -->
+	<InputFileName> /home/riggi/Analisi/Exercises_SVN/AugerSoftware/G4MuonCounterSimulatorUSC/production/rec/Output_DAT100001-RUN1_194.root </InputFileName>
+
+	<processHits use="yes">	
+		<processSelectedHits> 1 </processSelectedHits>
+		<energyDepositThreshold unit="MeV"> 0.0 </energyDepositThreshold>	
+		<nPhotonThreshold> 0 </nPhotonThreshold>
+		<nPEThreshold> 0 </nPEThreshold>
+	</processHits>
+
+
+	<!-- Merge particles in each station 
+			 according to the specified time interval t_merge
+			 e.g. first triggered strip gives t_start, other hits from all particles
+			 are merged if t-t_start<t_merge   	
+	-->
+	<mergeParticlesInEvent use="no">	
+		<mergeTimeInterval unit="ns"> 2000 </mergeTimeInterval>
+		<samplingTime unit="ns"> 10 </samplingTime>		 
+	</mergeParticlesInEvent>
+
+
+	<!-- turns on/off muon tracking -->
+	<trackMuons use="yes">	
+		<!-- Tracking algorithm: 1= LeastSquare, 2= KalmanFilter -->		
+		<TrackingAlgo> 2 </TrackingAlgo> 
+		<UseClusters> 1 </UseClusters>
+		<SplitClusters> 0 </SplitClusters>	 		
+		<SplitClusterThreshold> 4 </SplitClusterThreshold>
+		<RemoveFakeHits> 0 </RemoveFakeHits>
+		<UsePID> 0 </UsePID>
+		<NNCutInPID> 0.0 </NNCutInPID>
+
+		<!-- include MS correction in tracking -->
+		<UseMSCorrection use="yes"> 
+			<UseAverageEnergy> 1 </UseAverageEnergy>
+			<AverageEnergy unit="MeV"> 5000. </AverageEnergy>
+			<UseTrueEnergy> 0 </UseTrueEnergy>
+			<UseEnergyLossCorrection> 1 </UseEnergyLossCorrection>							
+		</UseMSCorrection> 
+
+		<!-- include momentum in tracking -->
+		<IncludeMomentum> 0 </IncludeMomentum> 
+	</trackMuons>
+
+
+	<SaveRecInfo use="yes">
+		<saveRecTree> 1 </saveRecTree>
+		<saveTrackTree> 1 </saveTrackTree>
+		<saveHisto> 1 </saveHisto>
+		<OutFileName> RecOutData.root </OutFileName> 		<!-- Name of ROOT output filename -->
+	</SaveRecInfo>
+
+</G4MuonCounterReconstructorUSC>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of UserModule -->
+<UserModule>
+
+<Verbosity> 1 </Verbosity>
+<Draw> 0 </Draw>
+
+<!-- Map Bins -->
+<mapBinning> 
+		<!-- coordinate system -->
+		<!-- 1= ground, 2= shower plane, 3= shower plane + rotation towards magnetic fields -->
+		<mapCS> 2 </mapCS>
+
+		<!-- cartesian coordinates -->
+		<nbinsX> 50 </nbinsX>
+    <minX unit="meter"> -4000 </minX>
+    <maxX unit="meter"> 4000 </maxX>
+		<nbinsY> 50 </nbinsY>
+		<minY unit="meter"> -4000 </minY>
+    <maxY unit="meter"> 4000 </maxY>
+		
+		<!-- polar coordinates -->
+		<fixRBinSize> 0 </fixRBinSize> 
+		<nbinsR> 50 </nbinsR>
+		<minR unit="meter"> 0 </minR>
+    <maxR unit="meter"> 10000. </maxR>
+		<fixPhiBinSize> 1 </fixPhiBinSize> 
+		<nbinsPhi> 20 </nbinsPhi>
+		<minPhi unit="degree"> -180 </minPhi>
+    <maxPhi unit="degree"> 180. </maxPhi>
+</mapBinning>
+
+
+<!-- Store particle info in output file (many Mb!) -->
+<particleInfo> 
+	  <storeInFile> 0 </storeInFile>
+		<Rcut unit="meter"> 150. </Rcut>
+		<readMuons> 1 </readMuons> 
+		<readElectrons> 1 </readElectrons>
+		<readGammas> 1 </readGammas>
+		<readHadrons> 0 </readHadrons>
+</particleInfo>
+
+
+
+<OutputFile> SimOutput.root </OutputFile>
+
+
+</UserModule>
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module G4MuonCounterParticleInjector -->
+
+<!-- NOTE : particles are injected with coordinate system relative to the
+            centre-bottom of the tank -->
+
+<G4MuonCounterParticleInjector>
+
+  <!-- Switches 0 == false, 1 == true -->
+
+  <config>
+    <UseSingleTank> 1 </UseSingleTank> <!-- Inject in 1 tank only -->
+    <UseInjectAllParticles> 0 </UseInjectAllParticles>
+    <UseSinglePosition> 1 </UseSinglePosition>
+		<UseRandomPositionXDistributionFromFile> 0 </UseRandomPositionXDistributionFromFile>
+		<UseRandomPositionYDistributionFromFile> 0 </UseRandomPositionYDistributionFromFile>
+
+    <UseDiscreteDirection> 0 </UseDiscreteDirection>
+		<UseRandomAzimuthDistributionFromFile> 0 </UseRandomAzimuthDistributionFromFile>
+		<UseRandomZenithDistributionFromFile> 0 </UseRandomZenithDistributionFromFile>
+
+    <UseDiscreteEnergy> 0 </UseDiscreteEnergy>
+		<UseRandomEnergyDistributionFromFile> 0 </UseRandomEnergyDistributionFromFile>
+		<UseRandomEnergyThetaDistributionFromFile> 1 </UseRandomEnergyThetaDistributionFromFile>
+
+    <UseDiscreteTime> 1 </UseDiscreteTime>
+		<!--<randomDistributionFile> /home/riggi/Dati/SimulatedData/Offline/BATATA/EAS/EASRandomDistribution.root </randomDistributionFile> -->
+	  <randomDistributionFile> /home/riggi/Analisi/Exercises_SVN/AugerSoftware/G4MuonCounterSimulatorUSC/trunk/data/ProtonHisto_QGSJETII_SpectrumE2.6.root </randomDistributionFile>   
+  </config>
+
+  <!-- Number of particles per tank -->
+  <NumberOfParticles> 1 </NumberOfParticles>
+
+  <!-- tank ID if using single tank option -->
+  <SingleTankID> 78 </SingleTankID>
+
+  <!-- Mixture of photons, e+/e-, and mu+/mu- in tank only if UseSpectrum set -->
+	<!-- 
+		eElectron = 11, ePositron = -11
+		ePhoton = 22 
+		eMuon = 13, eAntiMuon = -13
+		eNeutron = 2112, eProton = 2212
+	-->
+  <ParticleType> 13 </ParticleType> 
+
+  <UseDiscreteTimeSpectrum>
+    <ParticleTime unit="ns"> 500.0 </ParticleTime>
+  </UseDiscreteTimeSpectrum>
+
+  <UseContinuousTimeSpectrum>
+    <!-- To be completed -->
+  </UseContinuousTimeSpectrum>
+
+  <!-- Inject particle in single position -->
+  <SinglePosition>
+    <ParticleX unit="cm"> 0.0 </ParticleX>
+    <ParticleY unit="cm"> 0.0 </ParticleY>
+    <ParticleZ unit="cm"> 0.0 </ParticleZ>
+  </SinglePosition> <!-- spec. entry point if set-->
+
+	<RandomPosition>
+		<RandomAroundPosition> 0 </RandomAroundPosition>
+		<ParticleX unit="cm"> 0.0 </ParticleX>
+    <ParticleY unit="cm"> 0.0 </ParticleY>
+    <ParticleZ unit="cm"> 0.0 </ParticleZ>
+    <GridX unit="cm"> 100.0 </GridX> <!-- 200 -->
+    <GridY unit="cm"> 100.0 </GridY> <!-- 200 -->
+    <GridZ unit="cm"> 0.0 </GridZ>
+  </RandomPosition> <!-- spec. entry point if set-->
+
+  <!-- Inject particle with continuous zenith and azimuth distribution(radians) -->
+  <UseContinuousDirectionSpectrum>
+    <Zenith> cos(x)*cos(x)*sin(x) </Zenith>
+		<ZenithMin unit="degree"> 0 </ZenithMin>
+		<ZenithMax unit="degree"> 60 </ZenithMax>
+
+    <Azimuth> 1 </Azimuth>
+		<AzimuthMin unit="degree"> 0 </AzimuthMin>
+		<AzimuthMax unit="degree"> 180 </AzimuthMax>
+  </UseContinuousDirectionSpectrum>
+
+  <!-- Inject particle with discrete zenith and azimuth distribution -->
+  <UseDiscreteDirectionSpectrum>
+    <Zenith unit="degree">  2 </Zenith>
+    <Azimuth unit="degree"> 1 </Azimuth>
+  </UseDiscreteDirectionSpectrum>
+
+  <!-- Inject particle with continuous energy distribution -->
+  <UseContinuousEnergySpectrum>  
+    <MuonSpectrum> x </MuonSpectrum>
+    <MuonEnergyMin unit="GeV"> 1.0 </MuonEnergyMin>
+    <MuonEnergyMax unit="GeV"> 10.0 </MuonEnergyMax>
+
+    <ElectronSpectrum> 90.0*(pow(x,-2.5)) </ElectronSpectrum>
+    <ElectronEnergyMin unit="GeV"> 0.5 </ElectronEnergyMin>
+    <ElectronEnergyMax unit="GeV"> 10.0 </ElectronEnergyMax>
+
+    <PhotonSpectrum> 1.3*(pow(x,-1.8)) </PhotonSpectrum>
+    <PhotonEnergyMin unit="GeV"> 0.5  </PhotonEnergyMin>
+    <PhotonEnergyMax unit="GeV"> 10.0 </PhotonEnergyMax>
+
+		<HadronSpectrum> x </HadronSpectrum>
+    <HadronEnergyMin unit="GeV"> 0.5  </HadronEnergyMin>
+    <HadronEnergyMax unit="GeV"> 10.0 </HadronEnergyMax>
+  </UseContinuousEnergySpectrum> 
+
+  <!-- Inject particle with discrete energy distribution -->
+  <UseDiscreteEnergySpectrum>  
+    <MuonSpectrum> 1 </MuonSpectrum>
+    <MuonEnergy unit="GeV"> 5.0 </MuonEnergy>
+
+    <ElectronSpectrum> 1 </ElectronSpectrum>
+    <ElectronEnergy unit="GeV"> 1.0  </ElectronEnergy>
+
+    <PhotonSpectrum> 1 </PhotonSpectrum>
+    <PhotonEnergy unit="GeV"> 1.0 </PhotonEnergy>
+
+		<HadronSpectrum> 1 </HadronSpectrum>
+    <HadronEnergy unit="GeV"> 1.0 </HadronEnergy>
+  </UseDiscreteEnergySpectrum> 
+
+</G4MuonCounterParticleInjector>
+

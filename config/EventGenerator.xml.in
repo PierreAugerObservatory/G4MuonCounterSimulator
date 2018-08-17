@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ 
+<!-- Configuration of Module EventGenerator -->
+
+<!-- In the EventGenerator tag we define the path and name of the schema file
+(EventGenerator.xsd) used to validate this xml file. When make is invoked,
+\@SCHEMALOCATION\@ gets replaced by the path to the directory in the install area
+where configuration files are copied. -->
+
+<EventGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation='@SCHEMALOCATION@/EventGenerator.xsd'>
+
+  <mode> SD </mode>
+
+  <!--
+    The <eventIdentifier> is used to set the event ID for simulated
+    events. The event ID is composed of 4 parts:
+    1) libraryIdentifier (specified below). This can indicate purpose of
+       the run, what computing center was used, or whatever the person
+       in charge of productions feels is relevant
+    2) A Run Id, which is read automatically from the shower file
+    3) The Shower Id, which is read automatically from the shower file
+    4) The number of times a given shower has been used by the event
+       generator (in case, for example, one decides to throw the same
+       shower in various positions on the array)
+    The <format> tag below can be used to determine how the 4 components
+    are arranged and decorated to form the event ID. You can use the usual printf
+    directives in this <format> tag.
+  -->
+
+  <eventIdentifier>
+    <libraryIdentifier> Test </libraryIdentifier>
+    <format> Library_%1%:Run_%2%:Shower_%3%:Use_%4% </format>
+  </eventIdentifier>
+
+  <!-- Specify how to randomize the core position -->
+	<!--
+	<coreRandomization>
+    <useRandomStation> 1 </useRandomStation>
+  </coreRandomization>
+	-->
+
+
+	<!--
+	<coreRandomization>
+  	<centerOfTile>
+    	<stationAtCenter> 78 </stationAtCenter> 
+  	</centerOfTile>
+
+  	<sizeOfTile> 
+   		<deltaNorthing unit="meter"> 600.0 </deltaNorthing>
+   		<deltaEasting unit="meter">  600.0 </deltaEasting>
+		</sizeOfTile>
+	</coreRandomization>
+	-->
+
+
+  <coreRandomization>
+
+		<!-- Station 78 Northing= 6114357.66 -->
+		<!-- Station 78 Easting= 449879.68 -->
+
+		
+ 		<centerOfTile>  
+    	<northing unit="meter"> 6114357.66 </northing> 
+    	<!-- <easting unit="meter"> 449929.68 </easting> --> <!-- 50 m -->
+		  <!-- <easting unit="meter"> 449979.68 </easting> --> <!-- 100 m -->
+      <easting unit="meter"> 450079.68 </easting>  <!-- 200 m -->
+			<!-- <easting unit="meter"> 450279.68 </easting> --> <!-- 400 m -->
+
+			<altitude unit="m"> 1400 </altitude>
+    	<zone> 19  </zone>
+    	<band> H </band>
+  	</centerOfTile>
+
+		<sizeOfTile> 
+   		<deltaNorthing unit='m'> 0.0 </deltaNorthing>
+   		<deltaEasting unit='m'>  0.0 </deltaEasting>
+		</sizeOfTile>
+
+  </coreRandomization>
+
+
+  <!-- Time stamp of the core impact on ground -->
+  <eventTime> 2010-01-01T04:33:12.5 </eventTime>
+
+</EventGenerator>

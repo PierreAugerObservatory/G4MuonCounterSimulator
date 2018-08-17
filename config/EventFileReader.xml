@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module EventFileReader -->
+<EventFileReader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation='/home/riggi/Software/Offline/v2r9p1/share/auger-offline/config/EventFileReader.xsd'>
+
+<ReportFilenames/>
+
+<InputFileType> CORSIKA </InputFileType>
+
+<!-- <InputMode> 1  </InputMode> -->
+
+<InputFilenames>
+<!-- /home/riggi/Analisi/Exercises_Offline/data/ironQGSJETII_Energy19_0_Zenith60 -->
+<!-- data/protonQGSJETII_Energy19_0_Zenith0 -->
+<!-- data/SampleProtonQGSJETII_E18_Theta30.part -->
+data/DAT100015.part
+</InputFilenames>
+
+</EventFileReader>
+

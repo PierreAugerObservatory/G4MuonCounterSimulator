@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module ShowerRegenerator -->
+
+<ShowerRegenerator>
+
+<!-- <ShowerRegenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:noNamespaceSchemaLocation='@XMLSCHEMALOCATION@/ShowerRegenerator.xsd'> -->
+
+  <!--  
+    Limit maximum number of particles to inject into the station at one time.  This
+    number can be reduced if the executable cosumes too much memory.  Changing this
+    number will not affect the end result, but may (slightly) affect efficiency.
+    As an example, limiting to 1e6 particles per cycle will keep memory footprint
+    below about 300 Mb.  This option is enabled by setting the use attribute to "yes"
+    and disabled by setting it to "no".  If use="no", there will be no limit on the 
+    number of particles simulated in one go.
+
+    Important Note: if you use the LimitParticlesPerCycle parameter, AND you elect to stream
+    simulated particles injected in a tank (see EventFileExporter.xml), then the tanks
+    will only contain particles injected in the last cycle before writing to file.  
+    This problem will be resolved in future with a so-called VEM capping algorithm.  
+  -->    
+
+  <LimitParticlesPerCycle use="yes"> 500000 </LimitParticlesPerCycle>
+
+  <!--  
+    Cuts on inner and outer radii for particle regeneration.  If the attribute
+    use="no", the cut is not applied, but note that there may still be inner and outer
+    radii cuts imposed by the original generator-level shower simulation program
+    (eg. Aires or Corsika).  Information on generator-level radii cuts can be
+    extracted from evt::ShowerSimData::GetMinRadiusCut() and 
+    evt::ShowerSimData::GetMaxRadiusCut().
+  -->
+  <DistanceCuts>
+    <InnerRadiusCut unit="m"  use="yes">  50.0 </InnerRadiusCut>
+    <OuterRadiusCut unit="km" use="yes"> 100.0 </OuterRadiusCut>
+  </DistanceCuts>
+  
+  <!-- Particle energy cuts -->
+  <EnergyCuts>
+    <ElectronEnergyCut unit="MeV"> 50.0  </ElectronEnergyCut> <!-- 1.0 MeV tanks -->
+    <MuonEnergyCut     unit="MeV"> 10.0 </MuonEnergyCut> <!-- 10.0 MeV tanks -->
+    <PhotonEnergyCut   unit="MeV"> 50.0  </PhotonEnergyCut> <!-- 1.0 MeV tanks -->
+    <HadronEnergyCut   unit="MeV"> 10.0 </HadronEnergyCut> <!-- 10.0 MeV tanks -->
+    <MesonEnergyCut    unit="MeV"> 10.0 </MesonEnergyCut> <!-- 10.0 MeV tanks -->
+  </EnergyCuts>
+
+	<!-- Skip particles (mainly for debugging) -->
+	<ParticleSkip>
+    <SkipElectrons> 0 </SkipElectrons>
+		<SkipMuons> 0 </SkipMuons>
+		<SkipPhotons> 0 </SkipPhotons>
+		<SkipHadrons> 0 </SkipHadrons>
+		<SkipMesons> 0 </SkipMesons>
+  </ParticleSkip>
+	
+
+  <!-- Algorithm parameters -->
+  <AlgorithmParameters>
+    <DeltaROverR> 0.1 </DeltaROverR> <!-- dimensionless (dR/R) -->
+    <DeltaPhi unit="radian"> 0.15 </DeltaPhi>
+
+		<!-- This defines the detector area at ground used for resampling in the case of muon counters -->
+		<SamplingDetAreaSizeX unit="m"> 2. </SamplingDetAreaSizeX> 
+ 		<SamplingDetAreaSizeY unit="m"> 2. </SamplingDetAreaSizeY> 
+ 
+	  <HorizontalParticleCut> 1e-3 </HorizontalParticleCut>
+    <UseStationPositionMatrix> 1 </UseStationPositionMatrix>
+    <PhiGranularity> 2 </PhiGranularity>
+    <RGranularity> 2 </RGranularity>
+    <!-- set to 0 to disable time smearing -->
+    <LogGaussSmearingWidth> 0.1 </LogGaussSmearingWidth>
+  </AlgorithmParameters>
+
+
+
+  <!--
+    If ResamplingWeightLimiting is switched on, a special
+    algorithm is used to handle particles with very large
+    weights.  The algorithm is described by the following 
+    pseudo-code, where the values WeightCounter and 
+    AccumulatedWeight are defined in this XML file.
+    ATTENTION: at the moment this ONLY works for the 
+    G4FastTank simulation!  (as of 10 Oct 2008)
+
+    weight_counter = 0
+    if (particle_weight > WeightThreshold) {
+      counter += weight
+      if (weight_counter < AccumulatedWeightLimit) {
+        resample and inject n particles with unity weight
+      } else {
+        inject 1 particle with weight particle_weight 
+      }
+    } else {
+      resample and inject n particles with unity weight
+      where n is from Poissonian distristribution with
+      mean equal to particle_weight
+    }
+   -->
+
+  <ResamplingWeightLimiting use="no">
+    <WeightThreshold> 500 </WeightThreshold> 
+    <AccumulatedWeightLimit> 100000 </AccumulatedWeightLimit> 
+  </ResamplingWeightLimiting>
+
+
+	<SaveInjParticlesInfo use="yes">
+		<OutFileName> InjParticle.root </OutFileName> 		<!-- Name of ROOT output filename -->
+	</SaveInjParticlesInfo>
+
+
+</ShowerRegenerator>

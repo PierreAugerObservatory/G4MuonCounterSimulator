@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+<G4MuonCounterSimulator
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='@XMLSCHEMALOCATION@/G4MuonCounterSimulator.xsd'
+  xmlns:auger="http://www.auger.org/schema/types">
+-->
+
+<G4MuonCounterSimulatorUSC>
+
+	<verbosity>
+		<!-- 0= silent, 2= verbose for debug --> 
+		<runVerbosity> 0 </runVerbosity> 	
+		<eventVerbosity> 0 </eventVerbosity> 
+		<trackingVerbosity> 2 </trackingVerbosity> 
+	</verbosity>
+
+  <visualization>
+		<!-- 1, 2= OpenGL immediate (without/with Motif control)
+				 3, 4= OpenGL stored (without/with Motif control)
+				 5   = DAWN
+				 6   = VRML2
+		-->
+		<visDriver> 6 </visDriver> 
+    <geometry> 1 </geometry>
+    <trajectories> 1 </trajectories>
+  </visualization>
+
+	
+
+	<run>
+		<!-- <G4MacroFile> MuonCounterSimG4.mac </G4MacroFile> -->
+
+		<fullMode> 1 </fullMode>	
+		<!-- If fastMode set to 1, use custom optical photon tracking.  This speeds up
+       the simulation by about a factor of 5.  If fastMode set to 0, use the 
+       native G4 tracking for optical photons. -->
+  	<fastMode> 0 </fastMode>
+
+		<!-- Simulate particles one-by-one in each station 
+				 N.B. Set to 0 only for drawing or debug!
+		-->
+		<oneParticlePerStation> 1 </oneParticlePerStation>
+	</run>
+
+
+
+	<SaveSimInfo use="no">
+		<saveFullInfo> 0 </saveFullInfo>
+		<OutFileName> SimOutData.root </OutFileName> 		<!-- Name of ROOT output filename -->
+	</SaveSimInfo>
+
+
+  
+  <!-- Handle the physics interactions (turns on/off some processes) -->
+  <physicsProcesses> 
+		<All> 0 </All>
+		<Optical> 0 </Optical>
+		<Scintillation> 0 </Scintillation>
+		     <Cherenkov> 0 </Cherenkov>
+		          <WLS> 0 </WLS>
+		   <Absorption> 0 </Absorption>
+		     <Rayleigh> 0 </Rayleigh>
+		     <Boundary> 0 </Boundary>
+				 <muCapture> 0 </muCapture>
+	</physicsProcesses>
+
+	<!-- Handle the detector geometry & materials -->
+	
+	<worldMaterial> 3 </worldMaterial> <!-- 1= Vacuum, 2= Air, 3= Malargue soil -->
+
+	<MuonCounterModule> 
+		<nStrip> 49 </nStrip>  <!-- nStrips per detector plane (BATATA 49) -->
+		<nPlane> 3 </nPlane>   <!-- nPlanes per muon counter (1 or 3 for BATATA) -->
+				 
+		<superplaneThickness unit="mm"> 3.0 </superplaneThickness> <!-- 3 mm -->
+		<superplaneHeight unit="cm"> 6.0 </superplaneHeight> <!-- 6.0 cm -->
+		<superplaneCasingMaterial> 3 </superplaneCasingMaterial> <!-- possible choices: Vacuum, PVC, GlassFiber, Air -->
+		<superplaneDistance unit="cm"> 
+			50.0
+			30.0
+			200.0
+  	</superplaneDistance>
+		<!--
+		<superplaneDistance unit="cm"> 
+			100.0
+			130.0
+			300.0
+  	</superplaneDistance>
+		-->
+		<enableYplane> 1 </enableYplane>
+		<planeXYDistance unit="cm"> 0.0 </planeXYDistance>
+		<planeXYTiltAngle unit="degree"> 90.0 </planeXYTiltAngle>
+
+		<surfaceSeparationGap unit="nanometer"> 1.0 </surfaceSeparationGap>
+	</MuonCounterModule>
+
+	<ScintillatorStrip> 
+		<stripSizeX unit="cm"> 200.0 </stripSizeX>
+		<stripSizeY unit="cm"> 4.0 </stripSizeY>
+		<stripSizeZ unit="cm"> 1.0 </stripSizeZ>
+			
+		<stripGrooveX unit="cm"> 200.0 </stripGrooveX>
+		<stripGrooveY unit="cm"> 0.17 </stripGrooveY>
+		<stripGrooveZ unit="cm"> 0.17 </stripGrooveZ>
+
+		<stripHousingThickness unit="mm"> 0.25 </stripHousingThickness>
+		<stripHousingUseSpectrumReflectivity> 0 </stripHousingUseSpectrumReflectivity>
+		<stripHousingReflectivity> 0.90 </stripHousingReflectivity> 
+		<stripHousingSurfaceType> 1 </stripHousingSurfaceType> <!-- 1=polished, 2=ground -->	
+
+		<scintillationYield> 11136 </scintillationYield> <!-- in photons/MeV -->	
+		<scintillationWeight> 1 </scintillationWeight> <!-- true yield ==> w=1.0 -->
+		
+		<!-- Readout mode
+				1 => pmt readout at 'one' edge
+				2 => pmt readout at 'both' edges 
+				3 => pmt readout 'only' fiber at 'one' edge 
+		 		4 => pmt readout 'only' fiber at 'both' edge 
+		-->
+		<stripReadoutMode> 3 </stripReadoutMode> 
+
+		<!-- Design mode
+				1 => only scintillator
+				2 => scintillator + groove
+				3 => scintillator + groove + fiber
+		-->
+		<stripDesignMode> 3 </stripDesignMode>
+
+		<!-- Optical coupling mode
+				0 => no coupling medium
+				1 => optical coupling with Air
+				2 => optical coupling with Silicon Grease
+		-->
+		<stripOpticalCouplingMode> 0 </stripOpticalCouplingMode>
+
+		<stripEnergyThreshold unit="MeV"> 0.3 </stripEnergyThreshold>
+		<stripVetoTime unit="ns"> 20.0 </stripVetoTime>
+		<stripDecayTime unit="ns"> 1.0 </stripDecayTime>		
+
+	</ScintillatorStrip>
+
+	<WLSFiber> 
+		<fiberLength unit="cm"> 200.0 </fiberLength>
+		<fiberRadius unit="mm"> 0.75 </fiberRadius>
+		<fiberCaptureLength unit="mm"> 4.8 </fiberCaptureLength>
+		<fiberAttLength unit="m"> 3.5 </fiberAttLength>
+		<fiberDecayTime unit="ns"> 6.5 </fiberDecayTime>
+		<fiberCoreRefractiveIndex> 1.60 </fiberCoreRefractiveIndex>
+		<fiberClad1RefractiveIndex> 1.49 </fiberClad1RefractiveIndex>
+		<fiberClad2RefractiveIndex> 1.42 </fiberClad2RefractiveIndex>
+
+		<!-- Optical coupling mode
+				0 => no coupling medium (Vacuum)
+				1 => optical coupling with Air
+				2 => optical coupling with Silicon Grease
+				3 => optical coupling with Epoxy glue
+		-->
+		<fiberOpticalCouplingMode> 3 </fiberOpticalCouplingMode>
+	</WLSFiber> 
+
+	<PMT> 
+		<pmtSizeX unit="cm"> 1.0 </pmtSizeX>
+		<pmtSizeY unit="cm"> 4.0 </pmtSizeY> 
+		<pmtSizeZ unit="cm"> 1.0 </pmtSizeZ> 
+
+		<photocathodeSizeX unit="mm"> 1.0 </photocathodeSizeX> 
+		<photocathodeSizeY unit="mm"> 40.0 </photocathodeSizeY> 
+		<photocathodeSizeZ unit="mm"> 10.0 </photocathodeSizeZ>
+		
+		<optCouplingSizeX unit="mm"> 0.5 </optCouplingSizeX>
+		<optCouplingSizeY unit="mm"> 40.0 </optCouplingSizeY>
+		<optCouplingSizeZ unit="mm"> 10.0 </optCouplingSizeZ>
+
+		<useSpectrumQE> 0 </useSpectrumQE>
+
+		<averageTransitTime unit="ns"> 12.0 </averageTransitTime>
+		<spreadTransitTime unit="ns"> 1.85 </spreadTransitTime>
+		<peYield> 5.0 </peYield> <!-- average nPE produced per MeV of energy deposit (tuned in lab) -->
+	</PMT>
+
+ 	
+	
+
+</G4MuonCounterSimulatorUSC>

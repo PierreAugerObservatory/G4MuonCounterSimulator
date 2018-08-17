@@ -1,0 +1,41 @@
+<!-- A sequence for a Muon Counter simulation -->
+
+<sequenceFile>
+  
+  <enableTiming/>
+
+  <moduleControl>
+
+		<loop numTimes="10" pushEventToStack="yes">
+      
+      <module> EventFileReaderOG         </module> 
+
+      <loop numTimes="1" pushEventToStack="yes">
+
+				 <module> EventGeneratorOG          </module>
+		
+				<!--
+				<loop numTimes="unbounded" pushEventToStack="no">
+          <module> ShowerRegenerator </module> 
+          <module> G4MuonCounterSimulatorUSC  </module>  
+        </loop>
+				-->
+				
+				<!--
+				<module> G4MuonCounterParticleInjector </module> 
+        <module> G4MuonCounterSimulatorUSC  </module>
+				-->
+
+				
+			 	<module> G4MuonCounterReconstructorUSC  </module> 
+				
+				 
+			 <!-- <module> EventFileRecorder  </module> -->
+				 
+      </loop>
+      
+    </loop>
+    
+  </moduleControl>
+  
+</sequenceFile>

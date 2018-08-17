@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module EventFileRecorder -->
+
+<EventFileRecorder>
+
+<!-- <EventFileRecorder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:noNamespaceSchemaLocation='@XMLSCHEMALOCATION@/EventFileRecorder.xsd'> -->
+
+	<!-- Turn on/off the storing of gen/det/sim/rec info -->
+	<SaveInfo>
+    <GenInfo> 1 </GenInfo>                      <!-- on/off generated info -->
+		<DetInfo> 1 </DetInfo>                      <!-- on/off detector info -->
+		<SimInfo> 1 </SimInfo>                      <!-- on/off simulation info -->
+		<RecInfo> 1 </RecInfo>                      <!-- on/off reconstruction info -->
+		<OutFileName> Output.root </OutFileName> 		<!-- Name of ROOT output filename -->
+  </SaveInfo>
+	
+
+</EventFileRecorder>
